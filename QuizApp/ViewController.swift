@@ -11,20 +11,19 @@ import GameKit
 import AudioToolbox
 
 class ViewController: UIViewController {
-
+    
     let questionsPerRound = 4
-    var questionsAsked = 0
-    var correctQuestions = 0
-    var indexOfSelectedQuestion: Int = 0
-
-    var gameSound: SystemSoundID = 0
-
     let trivia: [[String : String]] = [
         ["Question": "Only female koalas can whistle", "Answer": "False"],
         ["Question": "Blue whales are technically whales", "Answer": "True"],
         ["Question": "Camels are cannibalistic", "Answer": "False"],
         ["Question": "All ducks are birds", "Answer": "True"]
     ]
+    
+    var questionsAsked = 0
+    var correctQuestions = 0
+    var indexOfSelectedQuestion: Int = 0
+    var gameSound: SystemSoundID = 0
 
     @IBOutlet weak var questionField: UILabel!
     @IBOutlet weak var trueButton: UIButton!
@@ -122,4 +121,5 @@ class ViewController: UIViewController {
     func playGameStartSound() {
         AudioServicesPlaySystemSound(gameSound)
     }
+    
 }

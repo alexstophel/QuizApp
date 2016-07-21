@@ -56,8 +56,10 @@
 		97093D3A1C913506001275BC /*  QuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				ADC06B661D50326A00743BBC /* Models */,
+				ADC06B651D50326100743BBC /* Views */,
+				ADC06B641D50324B00743BBC /* Controllers */,
 				97093D3B1C913506001275BC /* AppDelegate.swift */,
-				97093D3D1C913506001275BC /* ViewController.swift */,
 				97093D3F1C913506001275BC /* Main.storyboard */,
 				97093D421C913506001275BC /* Assets.xcassets */,
 				97093D441C913506001275BC /* LaunchScreen.storyboard */,
@@ -66,6 +68,28 @@
 			);
 			name = " QuizApp";
 			path = QuizApp;
+			sourceTree = "<group>";
+		};
+		ADC06B641D50324B00743BBC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				97093D3D1C913506001275BC /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		ADC06B651D50326100743BBC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		ADC06B661D50326A00743BBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
